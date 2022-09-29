@@ -134,3 +134,35 @@ do
         Console.WriteLine("Please enter a number or exit");
     }
  }
+ bool terminate = true;
+ while(terminate == true)
+ {
+     int one;
+     int two;
+     Console.WriteLine("please chose your first number");
+     one = int.Parse(Console.ReadLine());
+     Console.WriteLine("please chose your second number");
+     two = int.Parse(Console.ReadLine());
+    Console.WriteLine ("please chose your opperator, type out add, subtract, multiply, or divide.");
+    Console.WriteLine("type exit to end.");
+     string opperator = Console.ReadLine();
+   if(opperator == "exit")
+    {
+        loop23 = false;
+        Console.WriteLine("thank you for playing");
+        break;
+    }
+    if(opperator == "add"){
+        Console.WriteLine(one+two);
+    }
+    if(opperator == "subtract"){
+        Console.WriteLine(one-two);
+    }
+    if(opperator == "multiply"){
+        Console.WriteLine(one*two);
+    }
+    if(opperator == "divide"){
+        Console.WriteLine(one/two);
+    }
+
+ }
